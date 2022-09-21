@@ -12,4 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
+rm -rf feeds/luci/applications/luci-app-passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall feeds/luci/applications
