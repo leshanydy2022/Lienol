@@ -13,8 +13,8 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
 # Install app
-#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
-git clone https://github.com/leshanydy2022/luci-app-adguardhome.git package/lean/luci-app-adguardhome
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
+git clone https://github.com/leshanydy2022/luci-app-adguardhome.git feeds/other/luci-app-adguardhome
 # Modify default theme（FROM luci-theme-bootstrap CHANGE TO luci-theme-bootstrap-mod）
 sed -i 's/luci-theme-bootstrap/luci-theme-bootstrap-mod/g' ./feeds/luci/collections/luci/Makefile
 # 为adguardhome插件更换最新的版本
