@@ -39,9 +39,9 @@ rm -rf feeds/packages/net/smartdns
 git clone https://github.com/leshanydy2022/smartdns.git feeds/packages/net/smartdns
 #修改TPLINK内核为8M
 rm -rf target/linux/ar71xx/image/tiny-tp-link.mk
-sed -i 's/tplink-4mlzma/tplink-8mlzma/g' target/linux/ar71xx/image/tiny-tp-link.mk
+#sed -i 's/tplink-4mlzma/tplink-8mlzma/g' target/linux/ar71xx/image/tiny-tp-link.mk
 svn export https://github.com/leshanydy2022/TPLINK-8M/branches/main/tiny-tp-link.mk
 #修改水星4530内核为16M
 rm -rf target/linux/ar71xx/image/generic-tp-link.mk
-sed -i 's/tplink-8mlzma/tplink-16mlzma/g' target/linux/ar71xx/image/generic-tp-link.mk
+#sed -i 's/tplink-8mlzma/tplink-16mlzma/g' target/linux/ar71xx/image/generic-tp-link.mk
 svn export https://github.com/leshanydy2022/MW4530r-16M/branches/main/generic-tp-link.mk
